@@ -11,16 +11,16 @@ document.write('<div id="menuJF" class="printhide"><div id="menu-HT">');
 
 // START ICON LINKS
 
-document.write('<a href="#"><img src="js/floating-j-menu/icons-'+FMpath+'/slash.png" border="0" class="menu-floating-tab"></a>');
+document.write('<a href="index.html"><img src="js/floating-j-menu/icons-'+FMpath+'/slash.png" border="0" class="menu-floating-tab"></a>');
 
 
-document.write('<a href="index.html"><img src="js/floating-j-menu/icons-'+FMpath+'/instagram.png" border="0" class="menu-floating-tab"></a>');
+document.write('<a href="https://www.instagram.com"><img src="js/floating-j-menu/icons-'+FMpath+'/instagram.png" border="0" class="menu-floating-tab"></a>');
 
 
-document.write('<a href="site_map.htm"><img src="js/floating-j-menu/icons-'+FMpath+'/twitter.png" border="0" class="menu-floating-tab"></a>');
+document.write('<a href="https://www.twittercom"><img src="js/floating-j-menu/icons-'+FMpath+'/twitter.png" border="0" class="menu-floating-tab"></a>');
 
 
-document.write('<a href="contact.htm"><img src="js/floating-j-menu/icons-'+FMpath+'/youtube.png" border="0" class="menu-floating-tab"></a>');
+document.write('<a href="https://www.youtube.com"><img src="js/floating-j-menu/icons-'+FMpath+'/youtube.png" border="0" class="menu-floating-tab"></a>');
 
 
 document.write('<a href="https://www.facebook.com/"><img src="js/floating-j-menu/icons-'+FMpath+'/facebook.png" border="0" class="menu-floating-tab"></a>');
