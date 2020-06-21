@@ -4,7 +4,8 @@
   background: #ffffff;
   border: 0; }
   .topBar .logo {
-    padding: 0; }
+    padding: 0;
+    margin-left: 0 !important; }
   .topBar .mainMenu {
     float: right; }
     .topBar .mainMenu ul {
@@ -16,6 +17,15 @@
           font-size: 18px; }
     .topBar .mainMenu .slash {
       width: 40px; }
+    .topBar .mainMenu .phone-padding {
+      padding-top: 8px; }
+    .topBar .mainMenu .phone {
+      font: "Raleway-Bold";
+      letter-spacing: 0px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #0B1840;
+      text-transform: uppercase; }
 
 @font-face {
   font-family: "Raleway-Regular";
@@ -46,3 +56,14 @@ body {
 
 .mainContentHolder {
   margin-top: 154px; }
+  .mainContentHolder .hero {
+    background: url("../../assets/heroImage.png");
+    width: 100%;
+    height: 952px;
+    position: relative;
+    text-align: center; }
+    .mainContentHolder .hero .heroText {
+      bottom: 40px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      position: absolute; }
