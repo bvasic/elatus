@@ -1,0 +1,24 @@
+.topBar {
+    height: 128px;
+    background: $topMenuBg;
+    border: 0;
+    .logo {
+        padding:0;
+    }
+    .mainMenu {
+        float: right;
+        ul {
+            padding-top: 60px;
+            li {
+                height: 154px;
+                a {
+                    color: $topMenuText;
+                    font-size: 18px;
+                }
+            }
+        }
+        .slash {
+            width: 40px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.topBar {
+  height: 128px;
+  background: #ffffff;
+  border: 0; }
+  .topBar .logo {
+    padding: 0; }
+  .topBar .mainMenu {
+    float: right; }
+    .topBar .mainMenu ul {
+      padding-top: 60px; }
+      .topBar .mainMenu ul li {
+        height: 154px; }
+        .topBar .mainMenu ul li a {
+          color: #0b1840;
+          font-size: 18px; }
+    .topBar .mainMenu .slash {
+      width: 40px; }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../../fonts/Raleway-Regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */ }
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../../fonts/Raleway-Bold.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */ }
+.footer {
+  background: #f6f7f8; }
+  .footer .footerTitle {
+    font-family: "Raleway-Bold";
+    font-size: 17px; }
+  .footer .socialLinks {
+    padding-right: 40px; }
+  .footer .arrowRight {
+    margin-right: 20px; }
+  .footer .firstRow {
+    margin-top: 70px;
+    margin-bottom: 50px; }
+  .footer .secondRow {
+    margin-bottom: 70px; }
+
+body {
+  color: #3c3c3c;
+  font-family: "Raleway-Regular"; }
+
+.mainContentHolder {
+  margin-top: 154px; }

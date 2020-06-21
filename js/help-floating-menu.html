@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jQuery Floating Side Icon Menu</title>
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+body 	{
+	margin: 0;
+	padding: 0;
+	border: #FFFFFF 0px solid;
+	}
+
+
+a:link		{ color: #6633FF; text-decoration: none; }
+
+a:visited	{ color: #6633FF; text-decoration: none; }
+
+a:active	{ color: #999900; text-decoration: none; }
+
+a:hover		{ color: #669900; text-decoration: none; }
+
+a:link.homelink		{ color: #FFFFFF; font: 12px arial, sans-serif; font-weight: bold; font-style: italic; }
+
+a:visited.homelink	{ color: #FFFFFF; font: 12px arial, sans-serif; font-weight: bold; font-style: italic; }
+
+table 		{ color: #333333; font: 13px arial, sans-serif; font-weight: normal; }
+
+.hilite		{ color: #990000; font-weight: bold; }
+
+.title 		{ color: #000000; font: 15px arial, sans-serif; font-weight: bold; }
+
+.largetitle	{ color: #000000; font: 20px arial, sans-serif; font-weight: normal; }
+
+.subtitle 	{ color: #000000; font: 14px arial, sans-serif; font-weight: bold; }
+
+.alogo		{ color: #FFFFFF; font: 14px arial, sans-serif; font-weight: bold; font-style: italic; }
+
+.header		{ background-color: #1D59EB; border-bottom: #000000 1px solid; width: 100%; }
+
+table.header td	{ padding: 20px; }
+
+.maintable	{ width: 750px; }
+
+.maintableleft	{ width: 150px; padding: 8px 8px 8px 46px; }
+
+.maintableright	{ padding: 8px; }
+
+table, tr, td	 { border-collapse:collapse; border-spacing: 0; margin: 0; padding: 0; border: 0; }
+
+.center-div	 { margin-left: auto; margin-right: auto; }
+
+.centeralign	 { vertical-align: top; text-align: center; }
+
+.leftalign	 { vertical-align: top; text-align: left; }
+
+.rightalign	 { vertical-align: middle; text-align: right; }
+
+img		 { border: 0; }
+
+.formmargin	 { margin: 0px; }
+
+.list li 	 { padding: 5px 0px 5px 0px; }
+
+
+
+
+
+
+.selectcopy {
+color: #006A6A;
+background-color: #D8FEFA;
+border: 1px solid #009999;
+width: 225px;
+font: 11px verdana, arial, sans-serif;
+font-weight: normal;
+margin-bottom: 4px; }
+.textareacode {
+font: 11px arial, sans-serif;
+text-align: left;
+WIDTH: 550px;
+background-color:#F0F0F0;
+BORDER: #000000 1px solid; }
+
+</style>
+
+
+
+<script type="text/javascript">
+<!--
+function copyit(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+therange=tempval.createTextRange()
+therange.execCommand("Copy")
+}
+//-- END -->
+</script>
+
+
+<script type="text/javascript" src="floating-j-menu/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="floating-j-menu/jquery.easing.1.3.js"></script>
+
+<link rel="stylesheet" href="floating-j-menu/floating-j-menu.css" type="text/css">
+
+
+</head>
+
+<body>
+
+<table class="header"><tr><td class="leftalign">
+<a href="http://allwebcodesign.com/" class="homelink"><span class="alogo">Allwebco Design Corporation - Add-On</span></a><br>
+</td><td class="rightalign">
+<a href="http://allwebcodesign.com/" class="homelink">Home</a><br>
+</td></tr></table>
+
+
+<script type="text/javascript" src="http://allwebcodesign.com/setup/templatehelptop.js"></script>
+
+
+<br>
+
+<!-- MAIN TABLE -->
+<table class="center-div maintable"><tr><td class="leftalign maintableleft">
+
+<br>
+
+[ <a href="http://allwebcodesign.com">Allwebco Design</a> ]<br>
+
+[ <a href="http://allwebco.com">Allwebco Hosting</a> ]<br>
+
+<br><br>
+
+<script type="text/javascript" src="http://allwebcodesign.com/setup/templatehelp.js"></script>
+
+<br>
+
+</td><td class="leftalign maintableright">
+
+<span class="largetitle">jQuery Floating Menu<br></span>
+
+This script is provided free for any type of website project. Support is not included. <span class="hilite">Note:</span> Always make backup files and test after each edit before you go to another edit. You can always delete your backups later.
+
+<br><br>
+
+<a href="http://www.allwebco-templates.com/support/S_script_floating.htm">View support for this addon</a>
+
+<br><br><br>
+
+<span class="title">STEP 1.) Copy Files</span><br>
+Copy the "floating-j-menu" folder into your website folder. Files should stay inside this folder. Copy the "help-floating-menu.html" into your website folder. Open the "help-floating-menu.html" and go to the next step.
+
+<br><br><br>
+
+<span class="title">STEP 2.) Test</span><br>
+
+Open the "help-floating-menu.html" (this page) in your website folder. You should see the floating menu on the left side of this page. If you scroll, the menu should move with the page. If it's not working, re-do the step above.
+
+
+<br><br><br>
+
+<span class="title">STEP 3.) Add &lt;/head&gt; Code</span><br>
+Select, copy and paste the following 3 lines of code into the "head" of your existing webpage(s) that you want the floating menu on. Put the code just before the &lt;/head&gt; near the top of the page. Make backups of your webpages before you start.
+
+<br><br>
+
+<span class="hilite">Important:</span> The first line below is the jQuery library file. If your HTML pages already have a similar line in the &lt;/head&gt; section, do <span class="hilite">not</span> add this line (the version number may vary) and only add the 2nd and 3rd line. Check each page you add the menu to and do not use duplicate jQuery library file lines.
+
+<br><br>
+
+<span class="hilite">Note:</span> This menu works with other versions like "jquery-1.8.2.min.js".
+
+<br><br>
+
+<form name="selecting1" class="formmargin">
+<input onclick="copyit('selecting1.copyselect1')" type="button" value="Click to select all (also copies in IE)" name="copybutton" class="selectcopy"><br>
+<textarea name="copyselect1" rows="6" cols="55" class="textareacode">
+&lt;script type="text/javascript" src="floating-j-menu/jquery-1.11.3.min.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="floating-j-menu/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+
+&lt;link rel="stylesheet" href="floating-j-menu/floating-j-menu.css" type="text/css"&gt;
+</textarea>
+</form>
+
+<br><br><br>
+
+<span class="title">STEP 4.) Add Menu</span><br>
+Select, copy and paste the following line of code into your existing webpage(s). This code should go near the bottom of your HTML page. Add this just above the footer section of your webpages or just after the text content in your pages. The exact placement is not important.
+
+<br><br>
+
+<form name="selecting2" class="formmargin">
+<input onclick="copyit('selecting2.copyselect2')" type="button" value="Click to select all (also copies in IE)" name="copybutton" class="selectcopy"><br>
+<textarea name="copyselect2" rows="2" cols="55" class="textareacode">
+&lt;script type="text/javascript" src="floating-j-menu/floating-j-menu.js"&gt;&lt;/script&gt;
+</textarea>
+</form>
+
+<br><br>
+
+<span class="title">STEP 5.) Test</span><br>
+Test the webpage you added the floating menu to in a web browser. The menu should be visible and float down as your scroll down on the page. 
+
+<br><br><br>
+
+<span class="title">STEP 6.) Edit CSS Menu Location</span><br>
+Edit the "floating-j-menu.css" in the "floating-j-menu" folder.<br>
+
+<ol class="list">
+
+<li> On line #10 edit the <span class="hilite">left: 0;</span> to  <span class="hilite">right: 0;</span> to place the menu on the right side.
+
+<li> On line #8 edit the <span class="hilite">margin-top: 150px;</span> to any other <span class="hilite">px</span> number to move the menu up or down on the page.
+
+</ol>
+
+<br>
+
+<span class="title">STEP 7.) Edit Icons &amp; Links</span><br>
+Edit the "floating-j-menu.js" in the "floating-j-menu" folder. Do not edit the other 2 .js files.<br>
+
+<ol class="list">
+
+<li> Edit links in the <span class="hilite">floating-j-menu.js</span> to link to your pages.
+
+<li> Icons are included in the 2 icon folders. The menu is set to use the white icons. Edit the "var FMpath" near the top of this file to use either "white" or "black" icons.
+
+<li> Extra icons are included in each icon folder inside the "floating-j-menu" folder. Edit the "floating-j-menu.js" with the other image names to use other icons.
+
+<li> The PSD file in each icon folder is a Photoshop layered icon file.
+
+</ol>
+
+<br><br>
+
+<span class="largetitle">OPTIONS<br></span>
+
+<br>
+
+<b>COLORS:</b> | <a href="http://www.allwebco-templates.com/support/S_script_floating.htm">More details</a><br>
+Edit the "floating-j-menu.css" to change the background color or add a border.
+
+<br><br><br>
+
+<b>ICONS HIDING ON MOBILE:</b><br>
+
+Media queries code is included at the bottom of the "floating-j-menu.css". The breakpoint is set at 482 pixels. At this point the floating menu will hide. You can change the 482 to any number to set your own breakpoint. Edit the 482 in 4 total places. Optionally change the <span class="hilite">display: none;</span> to <span class="hilite">display: block;</span> to unhide the menu.
+
+<br><br><br>
+
+<b>ADDING MORE ICONS:</b><br>
+
+See the note in the "floating-j-menu.js" to copy and paste the last button line to add a new button. Edit the new button with your icon image and link.
+
+<br><br><br>
+
+<b>MORE OPTIONS:</b><br>
+
+See <a href="http://www.allwebco-templates.com/support/S_script_floating.htm">floating jQuery menu</a>.
+
+<br><br><br><br>
+
+<span class="largetitle">TROUBLESHOOTING<br></span>
+
+If you do the steps above and floating menu is not working:
+
+<ol class="list">
+<li> Try doing the above steps again from the start.
+<li> You are testing the wrong HTML page that you added the floating menu code to.
+<li> You are editing on-line files instead of files on your hard drive.
+<li> You have not used ALL the code from the above steps. Redo steps above.
+<li> If you have uploaded: Remember that hosting areas are case sensitive. Be sure all file, folder names and link names match exactly.
+<li> <span class="hilite">Note:</span> Always make backup files and test after each edit before you go to another edit. You can always delete your backups later.
+</ol>
+
+<br><br><br>
+
+Best of luck with your new add-on and your website!<br>
+
+~Allwebco Design~<br>
+
+<br><br>
+
+<span class="copyright">
+
+<b>COPYRIGHT &copy; Allwebco Design Corporation</b><br>
+Unauthorized use or sale of this script is strictly prohibited by law. You are authorized to use this on any Allwebco template, website or any template from another company for business or personal use. You are also authorized to modify all included files. <a href="http://www.allwebco-templates.com/support/terms-of-use.htm">View terms of use</a>.
+
+<br><br>
+
+</span>
+
+
+
+</td></tr></table>
+<!-- MAIN TABLE -->
+
+
+<br>
+
+<script type="text/javascript" src="floating-j-menu/floating-j-menu.js"></script>
+
+</body></html>

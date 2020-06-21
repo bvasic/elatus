@@ -1,0 +1,8 @@
+{
+	"mappings": [
+		 {
+		 	"src": "main.scss",
+		 	"dest": "../main.css"
+		 }
+	]
+}

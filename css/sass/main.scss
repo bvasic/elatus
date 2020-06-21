@@ -1,0 +1,13 @@
+@import "colors.scss";
+@import "topBar.scss";
+@import "fonts.scss";
+@import "footer.scss";
+
+body {
+    color: $text;
+    font-family: "Raleway-Regular";
+}
+
+.mainContentHolder {
+    margin-top: 154px;
+}
