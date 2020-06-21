@@ -1,0 +1,17 @@
+.topBar {
+    height: 154px;
+    background: $topMenuBg;
+    border: 0;
+    .logo {
+        padding:0;
+    }
+    .mainMenu {
+        float: right;
+        ul {
+            padding-top: 60px;
+            li {
+                height: 154px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.topBar {
+  height: 154px;
+  background: #ffffff;
+  border: 0; }
+  .topBar .logo {
+    padding: 0; }
+  .topBar .mainMenu {
+    float: right; }
+    .topBar .mainMenu ul {
+      padding-top: 60px; }
+      .topBar .mainMenu ul li {
+        height: 154px; }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../../fonts/Raleway-Regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */ }
+body {
+  color: #3c3c3c;
+  font-family: "Raleway-Regular"; }
+
+.container {
+  width: 1080px; }
+
+.mainContentHolder {
+  margin-top: 154px; }
